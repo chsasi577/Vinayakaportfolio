@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="qrBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E65100"/>
+      <stop offset="50%" stop-color="#FF9800"/>
+      <stop offset="100%" stop-color="#D4AF37"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="320" height="320" rx="16" fill="#FFFFFF"/>
+  <rect x="12" y="12" width="296" height="296" rx="12" fill="none" stroke="url(#qrBorderGrad)" stroke-width="3" stroke-dasharray="6,4"/>
+
+  <!-- QR Corner Markers (Decorative corner targets) -->
+  <!-- Top Left Target -->
+  <rect x="35" y="35" width="55" height="55" rx="8" fill="none" stroke="#212121" stroke-width="5"/>
+  <rect x="47" y="47" width="31" height="31" rx="4" fill="#E65100"/>
+
+  <!-- Top Right Target -->
+  <rect x="230" y="35" width="55" height="55" rx="8" fill="none" stroke="#212121" stroke-width="5"/>
+  <rect x="242" y="47" width="31" height="31" rx="4" fill="#E65100"/>
+
+  <!-- Bottom Left Target -->
+  <rect x="35" y="230" width="55" height="55" rx="8" fill="none" stroke="#212121" stroke-width="5"/>
+  <rect x="47" y="242" width="31" height="31" rx="4" fill="#E65100"/>
+
+  <!-- Center Placeholder Visual Icon & Badges -->
+  <circle cx="160" cy="135" r="45" fill="#FFF3E0" stroke="#FF9800" stroke-width="2"/>
+  <!-- Scan Icon -->
+  <g transform="translate(142, 117)">
+    <path d="M 0 10 L 0 0 L 10 0" fill="none" stroke="#E65100" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 36 10 L 36 0 L 26 0" fill="none" stroke="#E65100" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 0 26 L 0 36 L 10 36" fill="none" stroke="#E65100" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 36 26 L 36 36 L 26 36" fill="none" stroke="#E65100" stroke-width="3" stroke-linecap="round"/>
+    <line x1="6" y1="18" x2="30" y2="18" stroke="#D50000" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Clear Placeholder Text -->
+  <rect x="45" y="195" width="230" height="32" rx="6" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+  <text x="160" y="216" font-family="'Poppins', sans-serif" font-size="14" font-weight="bold" fill="#BF360C" text-anchor="middle" letter-spacing="0.5">
+    [YOUR UPI QR CODE]
+  </text>
+  
+  <text x="160" y="250" font-family="'Poppins', sans-serif" font-size="12" fill="#424242" text-anchor="middle" font-weight="600">
+    GPay / PhonePe / Paytm / BHIM
+  </text>
+  
+  <text x="160" y="270" font-family="'Poppins', sans-serif" font-size="11" fill="#757575" text-anchor="middle">
+    Scan to Pay with Any UPI App
+  </text>
+</svg>

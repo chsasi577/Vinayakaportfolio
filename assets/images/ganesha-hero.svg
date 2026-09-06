@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 550" width="100%" height="100%">
+  <defs>
+    <!-- Background Divine Glow -->
+    <radialGradient id="divineGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#FF9933" stop-opacity="0.75"/>
+      <stop offset="70%" stop-color="#FF5722" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FF5722" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Golden Gradients -->
+    <linearGradient id="goldGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF4D0"/>
+      <stop offset="40%" stop-color="#F5C042"/>
+      <stop offset="70%" stop-color="#D49A1F"/>
+      <stop offset="100%" stop-color="#8C5C05"/>
+    </linearGradient>
+
+    <linearGradient id="goldGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D49A1F"/>
+      <stop offset="50%" stop-color="#FFE885"/>
+      <stop offset="100%" stop-color="#E5A620"/>
+    </linearGradient>
+
+    <!-- Saffron & Vermilion Gradient -->
+    <linearGradient id="saffronGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF7722"/>
+      <stop offset="50%" stop-color="#E64A19"/>
+      <stop offset="100%" stop-color="#9C1C08"/>
+    </linearGradient>
+
+    <!-- Royal Crimson Gradient -->
+    <linearGradient id="crimsonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C2185B"/>
+      <stop offset="50%" stop-color="#880E4F"/>
+      <stop offset="100%" stop-color="#4A0033"/>
+    </linearGradient>
+
+    <!-- Filter for Heavenly Drop Shadow -->
+    <filter id="goldGlowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Radiant Aura / Sunburst Halo behind Ganesha -->
+  <circle cx="250" cy="240" r="190" fill="url(#divineGlow)" opacity="0.85"/>
+
+  <!-- Halo Rays Ring -->
+  <g stroke="url(#goldGrad1)" stroke-width="2.5" opacity="0.65" stroke-dasharray="8,6">
+    <circle cx="250" cy="240" r="175" fill="none"/>
+    <circle cx="250" cy="240" r="160" fill="none" stroke-width="1.5"/>
+  </g>
+
+  <!-- Intricate Petal Halo -->
+  <g transform="translate(250, 240)">
+    <g opacity="0.75">
+      <circle cx="0" cy="0" r="145" fill="none" stroke="#FFD700" stroke-width="1"/>
+      <path d="M 0 -150 L 0 -170 M 52 -140 L 60 -160 M 105 -105 L 120 -120 M 140 -52 L 160 -60 M 150 0 L 170 0 M 140 52 L 160 60 M 105 105 L 120 120 M 52 140 L 60 160 M 0 150 L 0 170 M -52 140 L -60 160 M -105 105 L -120 120 M -140 52 L -160 60 M -150 0 L -170 0 M -140 -52 L -160 -60 M -105 -105 L -120 -120 M -52 -140 L -60 -160" stroke="#FFB300" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Large Ears -->
+  <!-- Left Ear -->
+  <path d="M 175 190 C 130 160 90 200 100 250 C 110 290 150 310 175 300 C 185 295 180 230 175 190 Z" 
+        fill="url(#goldGrad2)" stroke="#8C5C05" stroke-width="3" filter="url(#goldGlowFilter)"/>
+  <path d="M 165 210 C 135 190 115 225 125 255 C 132 280 155 285 168 280" 
+        fill="none" stroke="#FF5722" stroke-width="3" stroke-linecap="round"/>
+  <!-- Ear Ornament Left -->
+  <circle cx="115" cy="270" r="7" fill="#E64A19" stroke="#FFF4D0" stroke-width="2"/>
+  <circle cx="115" cy="270" r="3" fill="#FFD700"/>
+
+  <!-- Right Ear -->
+  <path d="M 325 190 C 370 160 410 200 400 250 C 390 290 350 310 325 300 C 315 295 320 230 325 190 Z" 
+        fill="url(#goldGrad2)" stroke="#8C5C05" stroke-width="3" filter="url(#goldGlowFilter)"/>
+  <path d="M 335 210 C 365 190 385 225 375 255 C 368 280 345 285 332 280" 
+        fill="none" stroke="#FF5722" stroke-width="3" stroke-linecap="round"/>
+  <!-- Ear Ornament Right -->
+  <circle cx="385" cy="270" r="7" fill="#E64A19" stroke="#FFF4D0" stroke-width="2"/>
+  <circle cx="385" cy="270" r="3" fill="#FFD700"/>
+
+  <!-- Head Base -->
+  <ellipse cx="250" cy="225" rx="80" ry="75" fill="url(#goldGrad1)" stroke="#8C5C05" stroke-width="3"/>
+
+  <!-- The Holy Crown (Mukut) -->
+  <g id="Crown">
+    <!-- Mukut Base Band -->
+    <path d="M 180 170 C 215 155 285 155 320 170 L 325 150 C 285 135 215 135 175 150 Z" 
+          fill="url(#saffronGrad)" stroke="#FFD700" stroke-width="2"/>
+    <!-- Jewels on Band -->
+    <circle cx="210" cy="155" r="4" fill="#00E5FF"/>
+    <circle cx="230" cy="152" r="4" fill="#FFD700"/>
+    <circle cx="250" cy="150" r="5" fill="#D50000" stroke="#FFF" stroke-width="1"/>
+    <circle cx="270" cy="152" r="4" fill="#FFD700"/>
+    <circle cx="290" cy="155" r="4" fill="#00E5FF"/>
+
+    <!-- Mukut Middle Tier -->
+    <path d="M 190 148 C 220 125 280 125 310 148 L 305 105 C 275 85 225 85 195 105 Z" 
+          fill="url(#goldGrad2)" stroke="#8C5C05" stroke-width="2"/>
+    <polygon points="250,90 265,115 250,135 235,115" fill="#E64A19" stroke="#FFD700" stroke-width="1.5"/>
+
+    <!-- Mukut Top Spire -->
+    <path d="M 215 102 C 235 60 250 45 250 45 C 250 45 265 60 285 102 Z" 
+          fill="url(#goldGrad1)" stroke="#FFB300" stroke-width="2"/>
+    <circle cx="250" cy="42" r="6" fill="#FFD700" stroke="#FFF" stroke-width="1.5" filter="url(#goldGlowFilter)"/>
+    <circle cx="250" cy="30" r="3" fill="#D50000"/>
+    
+    <!-- Mukut Side Flares -->
+    <path d="M 180 165 C 160 145 165 115 185 120 C 185 130 185 145 190 150" fill="url(#goldGrad1)" stroke="#8C5C05" stroke-width="1.5"/>
+    <path d="M 320 165 C 340 145 335 115 315 120 C 315 130 315 145 310 150" fill="url(#goldGrad1)" stroke="#8C5C05" stroke-width="1.5"/>
+  </g>
+
+  <!-- Sacred Tilak / Trishul on Forehead -->
+  <g id="Tilak">
+    <!-- Red U Shape (Namam) -->
+    <path d="M 235 185 C 235 215 265 215 265 185 L 260 185 C 260 208 240 208 240 185 Z" fill="#D50000"/>
+    <!-- Yellow Chandan Central Line -->
+    <rect x="247" y="175" width="6" height="30" rx="3" fill="#FFD700"/>
+    <!-- Golden Bindi / Dot -->
+    <circle cx="250" cy="214" r="3.5" fill="#FFD700" stroke="#D50000" stroke-width="1"/>
+    <!-- Horizontal Tripundra Lines -->
+    <line x1="220" y1="182" x2="280" y2="182" stroke="#FFF9EE" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+    <line x1="225" y1="188" x2="275" y2="188" stroke="#FFF9EE" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+  </g>
+
+  <!-- Divine Eyes -->
+  <!-- Left Eye -->
+  <path d="M 205 212 Q 220 204 232 214 Q 220 219 205 212" fill="#FFFFFF" stroke="#4A2600" stroke-width="1.5"/>
+  <ellipse cx="220" cy="212" rx="3.5" ry="3" fill="#240A00"/>
+  <circle cx="221" cy="211" r="1.2" fill="#FFFFFF"/>
+  <path d="M 203 207 Q 218 200 234 210" fill="none" stroke="#683400" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Right Eye -->
+  <path d="M 295 212 Q 280 204 268 214 Q 280 219 295 212" fill="#FFFFFF" stroke="#4A2600" stroke-width="1.5"/>
+  <ellipse cx="280" cy="212" rx="3.5" ry="3" fill="#240A00"/>
+  <circle cx="279" cy="211" r="1.2" fill="#FFFFFF"/>
+  <path d="M 297 207 Q 282 200 266 210" fill="none" stroke="#683400" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Divine Trunk (Sondamu) -->
+  <g id="Trunk">
+    <!-- Main Trunk Flow -->
+    <path d="M 235 240 C 235 275 220 320 200 350 C 180 375 140 375 145 340 C 148 322 175 320 180 338 C 182 345 174 352 168 350 C 163 348 162 342 166 339" 
+          fill="none" stroke="url(#goldGrad1)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 235 240 C 235 275 220 320 200 350 C 180 375 140 375 145 340 C 148 322 175 320 180 338 C 182 345 174 352 168 350 C 163 348 162 342 166 339" 
+          fill="none" stroke="#8C5C05" stroke-width="2" stroke-linecap="round"/>
+    <!-- Trunk Horizontal Folds / Rings -->
+    <path d="M 226 265 Q 242 268 250 265" stroke="#D50000" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 218 290 Q 235 293 243 290" stroke="#FFD700" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M 205 315 Q 220 318 230 315" stroke="#D50000" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M 185 338 Q 198 340 205 336" stroke="#FFD700" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Modak at Trunk Tip -->
+    <g transform="translate(142, 335) scale(0.9)">
+      <path d="M 12 0 C 4 10 0 16 0 24 C 0 32 10 38 22 38 C 34 38 44 32 44 24 C 44 16 40 10 32 0 Z" 
+            fill="url(#goldGrad2)" stroke="#8C5C05" stroke-width="2" filter="url(#goldGlowFilter)"/>
+      <path d="M 22 4 L 22 34 M 14 10 Q 18 24 16 34 M 30 10 Q 26 24 28 34" stroke="#FFF9EE" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+      <circle cx="22" cy="18" r="3" fill="#D50000"/>
+    </g>
+  </g>
+
+  <!-- Tusks (Dantam) -->
+  <path d="M 220 250 L 205 260 L 210 265 L 222 256 Z" fill="#FFFDF8" stroke="#8C5C05" stroke-width="1.5"/>
+  <path d="M 276 250 Q 295 258 305 275 Q 288 266 274 256 Z" fill="#FFFDF8" stroke="#8C5C05" stroke-width="1.5"/>
+
+  <!-- Abhaya Hastha (Blessing Right Hand) with Sacred Om -->
+  <g id="AbhayaHastha" transform="translate(320, 290)">
+    <path d="M 15 45 C 5 25 15 5 35 10 C 50 15 55 35 50 55 C 45 75 25 80 15 45 Z" fill="url(#goldGrad1)" stroke="#8C5C05" stroke-width="2.5"/>
+    <path d="M 32 12 C 35 -5 48 -5 48 15" stroke="url(#goldGrad1)" stroke-width="9" stroke-linecap="round"/>
+    <path d="M 44 18 C 50 3 60 5 56 22" stroke="url(#goldGrad1)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 22 18 C 24 6 34 6 34 22" stroke="url(#goldGrad1)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 12 35 C 0 35 2 48 15 48" stroke="url(#goldGrad1)" stroke-width="8" stroke-linecap="round"/>
+    <text x="32" y="52" font-family="'Cinzel', 'Noto Sans Telugu', serif" font-size="20" font-weight="bold" fill="#D50000" text-anchor="middle">ॐ</text>
+    <rect x="18" y="70" width="35" height="12" rx="4" fill="url(#crimsonGrad)" stroke="#FFD700" stroke-width="2"/>
+    <circle cx="26" cy="76" r="2.5" fill="#FFD700"/>
+    <circle cx="35" cy="76" r="2.5" fill="#FFF"/>
+    <circle cx="44" cy="76" r="2.5" fill="#FFD700"/>
+  </g>
+
+  <!-- Divine Ornaments & Necklaces -->
+  <g id="Ornaments">
+    <path d="M 200 320 C 225 365 275 365 300 320" fill="none" stroke="url(#goldGrad2)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 200 320 C 225 365 275 365 300 320" fill="none" stroke="#D50000" stroke-width="2" stroke-dasharray="3,6"/>
+    <polygon points="250,360 262,376 250,392 238,376" fill="#D50000" stroke="#FFD700" stroke-width="2"/>
+    <circle cx="250" cy="376" r="4" fill="#FFD700"/>
+
+    <path d="M 185 270 C 200 330 260 410 320 440" fill="none" stroke="#FFE885" stroke-width="3" stroke-dasharray="6,3"/>
+    <path d="M 187 272 C 202 332 262 412 322 442" fill="none" stroke="#FF7722" stroke-width="1.5"/>
+  </g>
+
+  <!-- Festive Lotus Throne Base (Kamalasanam) -->
+  <g id="LotusThrone" transform="translate(0, 420)">
+    <g fill="url(#crimsonGrad)" stroke="#FFD700" stroke-width="2">
+      <path d="M 80 80 C 130 10 200 35 250 50 C 300 35 370 10 420 80 C 350 95 150 95 80 80 Z"/>
+      <path d="M 130 65 C 170 15 220 20 250 35 C 280 20 330 15 370 65 C 310 80 190 80 130 65 Z" fill="#E91E63"/>
+      <path d="M 200 55 C 230 10 250 0 250 0 C 250 0 270 10 300 55 C 265 65 235 65 200 55 Z" fill="#FF4081"/>
+    </g>
+    <ellipse cx="250" cy="65" rx="140" ry="18" fill="url(#goldGrad1)" stroke="#8C5C05" stroke-width="2"/>
+    <ellipse cx="250" cy="65" rx="130" ry="12" fill="#FFE885" opacity="0.6"/>
+  </g>
+
+  <!-- Floating Diyas at Bottom Flanks -->
+  <g id="LeftDiya" transform="translate(70, 430)">
+    <ellipse cx="30" cy="35" rx="28" ry="12" fill="#D49A1F" stroke="#8C5C05" stroke-width="1.5"/>
+    <path d="M 6 35 C 10 46 50 46 54 35 Z" fill="#8C5C05"/>
+    <ellipse cx="30" cy="33" rx="20" ry="7" fill="#FF5722"/>
+    <path d="M 30 5 C 22 20 20 28 30 32 C 40 28 38 20 30 5 Z" fill="#FFD700" filter="url(#goldGlowFilter)"/>
+    <path d="M 30 12 C 26 22 25 27 30 30 C 35 27 34 22 30 12 Z" fill="#FFFDF8"/>
+  </g>
+
+  <g id="RightDiya" transform="translate(370, 430)">
+    <ellipse cx="30" cy="35" rx="28" ry="12" fill="#D49A1F" stroke="#8C5C05" stroke-width="1.5"/>
+    <path d="M 6 35 C 10 46 50 46 54 35 Z" fill="#8C5C05"/>
+    <ellipse cx="30" cy="33" rx="20" ry="7" fill="#FF5722"/>
+    <path d="M 30 5 C 22 20 20 28 30 32 C 40 28 38 20 30 5 Z" fill="#FFD700" filter="url(#goldGlowFilter)"/>
+    <path d="M 30 12 C 26 22 25 27 30 30 C 35 27 34 22 30 12 Z" fill="#FFFDF8"/>
+  </g>
+</svg>

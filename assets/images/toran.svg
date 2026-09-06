@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 80" width="100%" height="80" preserveAspectRatio="none">
+  <defs>
+    <!-- Mango Leaf Gradient -->
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#388E3C"/>
+      <stop offset="60%" stop-color="#1B5E20"/>
+      <stop offset="100%" stop-color="#0E3D12"/>
+    </linearGradient>
+
+    <!-- Marigold Orange Flower Gradient -->
+    <radialGradient id="marigoldOrange" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF176"/>
+      <stop offset="35%" stop-color="#FF9800"/>
+      <stop offset="85%" stop-color="#E65100"/>
+      <stop offset="100%" stop-color="#BF360C"/>
+    </radialGradient>
+
+    <!-- Marigold Yellow Flower Gradient -->
+    <radialGradient id="marigoldYellow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#FFEE58"/>
+      <stop offset="80%" stop-color="#FDD835"/>
+      <stop offset="100%" stop-color="#F57F17"/>
+    </radialGradient>
+
+    <!-- Golden Thread -->
+    <linearGradient id="goldenRope" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F5C042"/>
+      <stop offset="50%" stop-color="#FFE885"/>
+      <stop offset="100%" stop-color="#D49A1F"/>
+    </linearGradient>
+
+    <!-- Single Mango Leaf Def -->
+    <g id="mangoLeaf">
+      <path d="M 0 0 C -14 25 -10 50 0 68 C 10 50 14 25 0 0 Z" fill="url(#leafGrad)"/>
+      <path d="M 0 0 L 0 65" stroke="#81C784" stroke-width="1.2" opacity="0.7"/>
+      <path d="M 0 18 Q -5 24 -10 26 M 0 32 Q -6 38 -9 42 M 0 18 Q 5 24 10 26 M 0 32 Q 6 38 9 42" stroke="#81C784" stroke-width="0.8" opacity="0.6"/>
+    </g>
+
+    <!-- Single Marigold Flower Def -->
+    <g id="marigoldFlower">
+      <circle cx="0" cy="0" r="16" fill="url(#marigoldOrange)"/>
+      <circle cx="0" cy="0" r="11" fill="url(#marigoldYellow)"/>
+      <circle cx="0" cy="0" r="5" fill="#BF360C"/>
+      <!-- Petal ruffles -->
+      <path d="M -14 0 Q -10 -8 0 -14 Q 8 -10 14 0 Q 10 8 0 14 Q -8 10 -14 0" fill="none" stroke="#FFA726" stroke-width="2"/>
+    </g>
+  </defs>
+
+  <!-- Hanging Golden Cord Arching -->
+  <path d="M 0 8 Q 150 25 300 8 Q 450 25 600 8 Q 750 25 900 8 Q 1050 25 1200 8" fill="none" stroke="url(#goldenRope)" stroke-width="5"/>
+  <path d="M 0 8 Q 150 25 300 8 Q 450 25 600 8 Q 750 25 900 8 Q 1050 25 1200 8" fill="none" stroke="#E65100" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <!-- Repeating Mango Leaves and Marigold Garlands -->
+  <!-- Segment 1 -->
+  <use href="#mangoLeaf" x="40" y="10" transform="rotate(-15 40 10)"/>
+  <use href="#mangoLeaf" x="75" y="14" transform="rotate(-5 75 14)"/>
+  <use href="#mangoLeaf" x="110" y="16" transform="rotate(5 110 16)"/>
+  <use href="#mangoLeaf" x="145" y="16" transform="rotate(0 145 16)"/>
+  <use href="#mangoLeaf" x="180" y="16" transform="rotate(-5 180 16)"/>
+  <use href="#mangoLeaf" x="215" y="14" transform="rotate(5 215 14)"/>
+  <use href="#mangoLeaf" x="250" y="10" transform="rotate(15 250 10)"/>
+
+  <!-- Segment 2 -->
+  <use href="#mangoLeaf" x="340" y="10" transform="rotate(-15 340 10)"/>
+  <use href="#mangoLeaf" x="375" y="14" transform="rotate(-5 375 14)"/>
+  <use href="#mangoLeaf" x="410" y="16" transform="rotate(5 410 16)"/>
+  <use href="#mangoLeaf" x="445" y="16" transform="rotate(0 445 16)"/>
+  <use href="#mangoLeaf" x="480" y="16" transform="rotate(-5 480 16)"/>
+  <use href="#mangoLeaf" x="515" y="14" transform="rotate(5 515 14)"/>
+  <use href="#mangoLeaf" x="550" y="10" transform="rotate(15 550 10)"/>
+
+  <!-- Segment 3 -->
+  <use href="#mangoLeaf" x="640" y="10" transform="rotate(-15 640 10)"/>
+  <use href="#mangoLeaf" x="675" y="14" transform="rotate(-5 675 14)"/>
+  <use href="#mangoLeaf" x="710" y="16" transform="rotate(5 710 16)"/>
+  <use href="#mangoLeaf" x="745" y="16" transform="rotate(0 745 16)"/>
+  <use href="#mangoLeaf" x="780" y="16" transform="rotate(-5 780 16)"/>
+  <use href="#mangoLeaf" x="815" y="14" transform="rotate(5 815 14)"/>
+  <use href="#mangoLeaf" x="850" y="10" transform="rotate(15 850 10)"/>
+
+  <!-- Segment 4 -->
+  <use href="#mangoLeaf" x="940" y="10" transform="rotate(-15 940 10)"/>
+  <use href="#mangoLeaf" x="975" y="14" transform="rotate(-5 975 14)"/>
+  <use href="#mangoLeaf" x="1010" y="16" transform="rotate(5 1010 16)"/>
+  <use href="#mangoLeaf" x="1045" y="16" transform="rotate(0 1045 16)"/>
+  <use href="#mangoLeaf" x="1080" y="16" transform="rotate(-5 1080 16)"/>
+  <use href="#mangoLeaf" x="1115" y="14" transform="rotate(5 1115 14)"/>
+  <use href="#mangoLeaf" x="1150" y="10" transform="rotate(15 1150 10)"/>
+
+  <!-- Marigold Rosettes along the nodes and arches -->
+  <use href="#marigoldFlower" x="0" y="8"/>
+  <use href="#marigoldFlower" x="75" y="18"/>
+  <use href="#marigoldFlower" x="145" y="24"/>
+  <use href="#marigoldFlower" x="220" y="18"/>
+  <use href="#marigoldFlower" x="300" y="8"/>
+  <use href="#marigoldFlower" x="375" y="18"/>
+  <use href="#marigoldFlower" x="445" y="24"/>
+  <use href="#marigoldFlower" x="520" y="18"/>
+  <use href="#marigoldFlower" x="600" y="8"/>
+  <use href="#marigoldFlower" x="675" y="18"/>
+  <use href="#marigoldFlower" x="745" y="24"/>
+  <use href="#marigoldFlower" x="820" y="18"/>
+  <use href="#marigoldFlower" x="900" y="8"/>
+  <use href="#marigoldFlower" x="975" y="18"/>
+  <use href="#marigoldFlower" x="1045" y="24"/>
+  <use href="#marigoldFlower" x="1120" y="18"/>
+  <use href="#marigoldFlower" x="1200" y="8"/>
+</svg>

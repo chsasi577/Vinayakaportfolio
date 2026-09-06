@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEST STREET YOUTH | మన వీధి వినాయక చవితి వేడుకలు | Vinayaka Chavithi Celebrations</title>
+  <meta name="description" content="Official website for West Street Youth Vinayaka Chavithi Celebrations (మన వీధి వినాయక చవితి వేడుకలు). Program schedule, committee members, gallery, and community donation support.">
+  <meta name="theme-color" content="#FF6F00">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/diya.svg">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Floating Falling Marigold Petals Canvas -->
+  <canvas id="petals-canvas"></canvas>
+
+  <!-- Traditional Top Toran (Mango Leaf & Marigold Flower Garland) -->
+  <div class="top-toran-container" aria-hidden="true"></div>
+
+  <!-- STICKY NAVIGATION BAR -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-inner">
+      <!-- Brand Logo -->
+      <a href="#home" class="nav-brand">
+        <div class="brand-icon-wrapper">
+          <img src="assets/images/diya.svg" alt="Diya" class="diya-flame-flicker">
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">WEST STREET YOUTH</span>
+          <span class="brand-sub">వినాయక చవితి వేడుకలు</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#committee" class="nav-link">Committee</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#donate" class="nav-link">Donate</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Button & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#donate" class="nav-donate-btn">
+          <span>🌸 విరాళం ఇవ్వండి</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =================================================================
+         1. HOME / HERO SECTION
+         ================================================================= -->
+    <section id="home" class="hero-section">
+      <!-- Decorative Rotating Mandala Background -->
+      <img src="assets/images/mandala.svg" alt="" class="hero-mandala-bg mandala-rotate" aria-hidden="true">
+
+      <div class="container hero-grid">
+        <!-- Hero Text & Details (Left) -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <img src="assets/images/diya.svg" alt="" class="diya-flame-flicker">
+            <span class="hero-badge-text">🙏 శ్రీ గణేశాయ నమః | Ganapathi Bappa Morya</span>
+          </div>
+
+          <h1 class="hero-title gold-gradient-text">WEST STREET YOUTH</h1>
+          <h2 class="hero-subtitle-telugu">మన వీధి వినాయక చవితి వేడుకలు</h2>
+          <p class="hero-subtitle-en">Vinayaka Chavithi Celebrations</p>
+
+          <!-- Welcome Message -->
+          <div class="hero-welcome-box">
+            <p>
+              మా <strong>వెస్ట్ స్ట్రీట్ యూత్ (West Street Youth)</strong> ఆధ్వర్యంలో జరుగుతున్న శ్రీ వినాయక చవితి మహోత్సవాలకు భక్తులందరికీ ఆత్మీయ స్వాగతం. గణనాథుని దివ్య కృపాకటాక్షాలతో మన వీధిలోని ప్రతి ఇంటా సుఖశాంతులు, ఆయురారోగ్యాలు వర్ధిల్లాలని మనసారా ప్రార్థిస్తున్నాము.
+            </p>
+          </div>
+
+          <!-- Festival Date, Time & Location Cards -->
+          <div class="hero-meta-grid">
+            <div class="hero-meta-card">
+              <div class="meta-icon-box">📅</div>
+              <div class="meta-info">
+                <h5>మహోత్సవ తేదీలు (Dates)</h5>
+                <p>చవితి నుండి నిమజ్జనం వరకు</p>
+              </div>
+            </div>
+
+            <div class="hero-meta-card">
+              <div class="meta-icon-box">⏰</div>
+              <div class="meta-info">
+                <h5>నిత్య పూజ సమయాలు (Daily Puja)</h5>
+                <p>ఉదయం 8:00 AM &amp; సాయంత్రం 7:00 PM</p>
+              </div>
+            </div>
+
+            <div class="hero-meta-card" style="grid-column: 1 / -1;">
+              <div class="meta-icon-box">📍</div>
+              <div class="meta-info">
+                <h5>వేదిక (Location)</h5>
+                <!-- PLACEHOLDER: Replace with your actual street/pandal address -->
+                <p>[LOCATION] - West Street Ganesh Mandapam</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="hero-cta-group">
+            <a href="#donate" class="btn-primary shimmer-btn">
+              <span>🌸 Support &amp; Donate Now</span>
+            </a>
+            <a href="#events" class="btn-secondary">
+              <span>📜 Program Schedule (కార్యక్రమాలు)</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual Artwork & Countdown (Right) -->
+        <div class="hero-visual">
+          <div class="ganesha-frame-outer">
+            <!-- Majestic Lord Ganesha SVG Illustration -->
+            <img src="assets/images/ganesha-hero.svg" alt="Lord Ganesha - West Street Youth" class="divine-aura">
+          </div>
+
+          <!-- Live Festival Countdown Timer Card -->
+          <div class="countdown-box">
+            <div class="countdown-header">
+              <span class="countdown-title">
+                <span class="diya-flame-flicker">🪔</span> వేడుకల ప్రారంభ సమయం (Festival Countdown)
+              </span>
+              <span style="font-size: 0.75rem; color: #FF9800; font-weight: 600;">LIVE</span>
+            </div>
+            <div class="countdown-grid">
+              <div class="countdown-item">
+                <div class="countdown-num" id="cd-days">00</div>
+                <div class="countdown-label">Days</div>
+              </div>
+              <div class="countdown-item">
+                <div class="countdown-num" id="cd-hours">00</div>
+                <div class="countdown-label">Hours</div>
+              </div>
+              <div class="countdown-item">
+                <div class="countdown-num" id="cd-mins">00</div>
+                <div class="countdown-label">Minutes</div>
+              </div>
+              <div class="countdown-item">
+                <div class="countdown-num" id="cd-secs">00</div>
+                <div class="countdown-label">Seconds</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         2. ABOUT US SECTION
+         ================================================================= -->
+    <section id="about" class="section section-darker">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tagline">మా గురించి • Our Mission</span>
+          <h2 class="section-title gold-gradient-text">About West Street Youth</h2>
+          <div class="section-divider">
+            <span class="divider-line"></span>
+            <img src="assets/images/diya.svg" alt="" class="divider-diya diya-flame-flicker">
+            <span class="divider-line right"></span>
+          </div>
+          <p class="section-description">
+            మన వీధి వినాయక చవితి వేడుకలు స్థానిక కాలనీవాసులందరి సహాయ సహకారాలు, ఆత్మీయ ప్రోత్సాహంతో ఘనంగా నిర్వహించబడుతున్నాయి.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Information -->
+          <div class="about-text-content">
+            <h3 class="gold-gradient-text">ఐక్యత • భక్తి • సేవ</h3>
+            <p class="about-telugu-lead">
+              "కాలనీలోని ప్రతి కుటుంబాన్ని ఏకం చేస్తూ, మన సంప్రదాయాలను భావితరాలకు సగర్వంగా అందించడమే వెస్ట్ స్ట్రీట్ యూత్ ప్రధాన లక్ష్యం."
+            </p>
+            <p>
+              <strong>West Street Youth</strong> is proud to organize the annual Vinayaka Chavithi celebrations with the enthusiastic participation and blessings of all our local residents, elders, and youth. For years, our Ganesh Pandal has been a symbol of devotional unity, cultural vibrancy, and community service.
+            </p>
+            <p>
+              From morning Ganapathi Homam to vibrant cultural performances by local children, daily Annadanam, and the grand Shobha Yatra, every single activity is managed with dedication by our youth volunteers.
+            </p>
+
+            <!-- Feature Pillars -->
+            <div class="about-features-grid">
+              <div class="feature-pill-card">
+                <div class="feature-icon">🌿</div>
+                <div class="feature-info">
+                  <h4>Eco-Friendly Ganesha</h4>
+                  <p>మట్టి గణపతి (Clay Idol) పూజించి ప్రకృతిని రక్షిస్తున్నాము.</p>
+                </div>
+              </div>
+
+              <div class="feature-pill-card">
+                <div class="feature-icon">🍲</div>
+                <div class="feature-info">
+                  <h4>Maha Annadanam</h4>
+                  <p>వేలాది మంది భక్తులకు స్వచ్ఛమైన నిత్యాన్నదాన వితరణ.</p>
+                </div>
+              </div>
+
+              <div class="feature-pill-card">
+                <div class="feature-icon">🎭</div>
+                <div class="feature-info">
+                  <h4>Cultural Talents</h4>
+                  <p>పిల్లలు మరియు మహిళల కోసం ప్రత్యేక సాంస్కృతిక పోటీలు.</p>
+                </div>
+              </div>
+
+              <div class="feature-pill-card">
+                <div class="feature-icon">🤝</div>
+                <div class="feature-info">
+                  <h4>Youth Dedication</h4>
+                  <p>24/7 పర్యవేక్షణతో కాలనీ యువత నిరంతర సేవలు.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual Stat Cards -->
+          <div class="about-visual-card">
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-number">10+</div>
+                <div class="stat-title">Years of Tradition</div>
+                <div class="stat-sub">సంవత్సరాల చరిత్ర</div>
+              </div>
+
+              <div class="stat-item">
+                <div class="stat-number">5,000+</div>
+                <div class="stat-title">Devotees Welcomed</div>
+                <div class="stat-sub">దర్శించుకున్న భక్తులు</div>
+              </div>
+
+              <div class="stat-item">
+                <div class="stat-number">2,500+</div>
+                <div class="stat-title">Annadanam Meals</div>
+                <div class="stat-sub">అన్నదాన ప్రసాదాలు</div>
+              </div>
+
+              <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-title">Youth Volunteers</div>
+                <div class="stat-sub">కార్యకర్తల సైన్యం</div>
+              </div>
+            </div>
+
+            <!-- Eco Initiative Callout -->
+            <div class="eco-banner">
+              <div class="eco-icon">🌱</div>
+              <p>
+                <strong>పర్యావరణ హిత గణపతి:</strong> మన వెస్ట్ స్ట్రీట్ యూత్ ఆధ్వర్యంలో పర్యావరణ పరిరక్షణ కోసం సహజసిద్ధమైన మట్టి వినాయకుడిని మాత్రమే ప్రతిష్టించి పూజిస్తున్నాము.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         3. COMMITTEE MEMBERS SECTION
+         ================================================================= -->
+    <section id="committee" class="section section-crimson">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tagline">నిర్వాహక కమిటీ సభ్యులు • Organizing Committee</span>
+          <h2 class="section-title gold-gradient-text">West Street Youth Committee</h2>
+          <div class="section-divider">
+            <span class="divider-line"></span>
+            <img src="assets/images/diya.svg" alt="" class="divider-diya diya-flame-flicker">
+            <span class="divider-line right"></span>
+          </div>
+          <p class="section-description">
+            ఈ ఉత్సవాలను విజయవంతంగా నడిపించే మన వెస్ట్ స్ట్రీట్ యూత్ కమిటీ ప్రతినిధులు.
+          </p>
+        </div>
+
+        <div class="committee-grid">
+          <!-- ==========================================
+               MEMBER 1: PRESIDENT
+               Replace placeholders with real photo, name, and contact
+               ========================================== -->
+          <div class="member-card">
+            <div class="member-photo-frame">
+              <!-- PLACEHOLDER: Replace 'assets/images/placeholder-avatar.svg' with your member's image (e.g., 'assets/images/president.jpg') -->
+              <img src="assets/images/placeholder-avatar.svg" alt="President">
+            </div>
+            <!-- PLACEHOLDER: Replace Member Name -->
+            <h3 class="member-name">[MEMBER NAME]</h3>
+            <span class="member-role-badge">President (అధ్యక్షులు)</span>
+            <p class="member-responsibility">
+              Overall festival leadership, coordination with colony elders, administration and permissions.
+            </p>
+            <div class="member-contact-tag">
+              <span>📞 [CONTACT NUMBER]</span>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               MEMBER 2: VICE PRESIDENT
+               ========================================== -->
+          <div class="member-card">
+            <div class="member-photo-frame">
+              <img src="assets/images/placeholder-avatar.svg" alt="Vice President">
+            </div>
+            <h3 class="member-name">[MEMBER NAME]</h3>
+            <span class="member-role-badge">Vice President (ఉపాధ్యక్షులు)</span>
+            <p class="member-responsibility">
+              Assisting overall execution, sponsor relations, and stage management.
+            </p>
+            <div class="member-contact-tag">
+              <span>📞 [CONTACT NUMBER]</span>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               MEMBER 3: SECRETARY
+               ========================================== -->
+          <div class="member-card">
+            <div class="member-photo-frame">
+              <img src="assets/images/placeholder-avatar.svg" alt="Secretary">
+            </div>
+            <h3 class="member-name">[MEMBER NAME]</h3>
+            <span class="member-role-badge">Secretary (కార్యదర్శి)</span>
+            <p class="member-responsibility">
+              Event scheduling, official communications, priest consultations, and public announcements.
+            </p>
+            <div class="member-contact-tag">
+              <span>📞 [CONTACT NUMBER]</span>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               MEMBER 4: TREASURER
+               ========================================== -->
+          <div class="member-card">
+            <div class="member-photo-frame">
+              <img src="assets/images/placeholder-avatar.svg" alt="Treasurer">
+            </div>
+            <h3 class="member-name">[MEMBER NAME]</h3>
+            <span class="member-role-badge">Treasurer (కోశాధికారి)</span>
+            <p class="member-responsibility">
+              Managing community donations, budget accounting, daily expenditure, and transparency.
+            </p>
+            <div class="member-contact-tag">
+              <span>📞 [CONTACT NUMBER]</span>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               MEMBER 5: EVENT COORDINATOR
+               ========================================== -->
+          <div class="member-card">
+            <div class="member-photo-frame">
+              <img src="assets/images/placeholder-avatar.svg" alt="Event Coordinator">
+            </div>
+            <h3 class="member-name">[MEMBER NAME]</h3>
+            <span class="member-role-badge">Event Coordinator (కార్యక్రమ సమన్వయకర్త)</span>
+            <p class="member-responsibility">
+              Supervising daily rituals, Annadanam queue management, and safety protocols.
+            </p>
+            <div class="member-contact-tag">
+              <span>📞 [CONTACT NUMBER]</span>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               MEMBER 6: DECORATION TEAM
+               ========================================== -->
+          <div class="member-card">
+            <div class="member-photo-frame">
+              <img src="assets/images/placeholder-avatar.svg" alt="Decoration Team Lead">
+            </div>
+            <h3 class="member-name">[MEMBER NAME]</h3>
+            <span class="member-role-badge">Decoration Team (అలంకరణ విభాగం)</span>
+            <p class="member-responsibility">
+              Mandapam design, floral decoration, festival lighting, sound system, and theme setup.
+            </p>
+            <div class="member-contact-tag">
+              <span>📞 [CONTACT NUMBER]</span>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               MEMBER 7: CULTURAL PROGRAM COORDINATOR
+               ========================================== -->
+          <div class="member-card">
+            <div class="member-photo-frame">
+              <img src="assets/images/placeholder-avatar.svg" alt="Cultural Coordinator">
+            </div>
+            <h3 class="member-name">[MEMBER NAME]</h3>
+            <span class="member-role-badge">Cultural Coordinator (సాంస్కృతిక సమన్వయం)</span>
+            <p class="member-responsibility">
+              Arranging kids' dance &amp; singing competitions, drawing contests, and devotional bhajanas.
+            </p>
+            <div class="member-contact-tag">
+              <span>📞 [CONTACT NUMBER]</span>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               MEMBER 8: VOLUNTEERS LEAD
+               ========================================== -->
+          <div class="member-card">
+            <div class="member-photo-frame">
+              <img src="assets/images/placeholder-avatar.svg" alt="Volunteers Team">
+            </div>
+            <h3 class="member-name">[MEMBER NAME]</h3>
+            <span class="member-role-badge">Volunteers Lead (వాలంటీర్ల బృందం)</span>
+            <p class="member-responsibility">
+              Youth volunteer fleet management, prasadam distribution, guest reception, and cleanup.
+            </p>
+            <div class="member-contact-tag">
+              <span>📞 [CONTACT NUMBER]</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 35px;">
+          <p style="color: #FFE082; font-size: 0.92rem;">
+            💡 <em>గమనిక: పై సభ్యుల వివరాలు మరియు ఫోటోలను మీ నిజమైన వివరాలతో సులభంగా మార్చుకోవచ్చు.</em>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         4. EVENTS SCHEDULE SECTION
+         ================================================================= -->
+    <section id="events" class="section section-darker">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tagline">వేడుకల కార్యచరణ • Program Schedule</span>
+          <h2 class="section-title gold-gradient-text">Festival Events &amp; Schedule</h2>
+          <div class="section-divider">
+            <span class="divider-line"></span>
+            <img src="assets/images/diya.svg" alt="" class="divider-diya diya-flame-flicker">
+            <span class="divider-line right"></span>
+          </div>
+          <p class="section-description">
+            వినాయక చవితి సందర్భంగా నిర్వహించబడుతున్న దివ్య కార్యక్రమాలు మరియు పూజా విశేషాలు.
+          </p>
+        </div>
+
+        <!-- Event Filter Buttons -->
+        <div class="events-filter-bar">
+          <button class="filter-btn active" data-filter="all">అన్ని కార్యక్రమాలు (All Events)</button>
+          <button class="filter-btn" data-filter="puja">పూజా కార్యక్రమాలు (Puja &amp; Rituals)</button>
+          <button class="filter-btn" data-filter="cultural">సాంస్కృతిక వేడుకలు (Cultural)</button>
+          <button class="filter-btn" data-filter="annadanam">అన్నదానం (Annadanam)</button>
+          <button class="filter-btn" data-filter="nimajjanam">నిమజ్జనం (Nimajjanam)</button>
+        </div>
+
+        <!-- Events Timeline Cards -->
+        <div class="events-timeline">
+          <!-- EVENT 1: IDOL INSTALLATION -->
+          <div class="event-card" data-category="puja">
+            <div class="event-date-column">
+              <span class="event-day-number">DAY 1</span>
+              <span class="event-month">ప్రారంభం</span>
+              <span class="event-day-tag">చవితి తిథి</span>
+            </div>
+            <div class="event-details-column">
+              <div class="event-meta-row">
+                <span class="event-time-badge">⏰ 08:30 AM onwards</span>
+                <span class="event-venue-badge">📍 Ganesh Mandapam, West Street</span>
+              </div>
+              <h3 class="event-title">Ganesh Idol Installation &amp; Prana Pratishtha</h3>
+              <h4 class="event-telugu-title">శ్రీ వినాయక ప్రతిష్టాపన &amp; ప్రాణ ప్రతిష్ట</h4>
+              <p class="event-desc">
+                వేద పండితుల మంత్రోచ్ఛారణల మధ్య గణపతి విగ్రహ ప్రతిష్టాపన, కలశ స్థాపన, గణపతి హోమం మరియు విశేష పంచామృతాభిషేకం.
+              </p>
+            </div>
+          </div>
+
+          <!-- EVENT 2: DAILY GANAPATHI PUJA -->
+          <div class="event-card" data-category="puja">
+            <div class="event-date-column">
+              <span class="event-day-number">DAILY</span>
+              <span class="event-month">ఉభయ సంధ్యల</span>
+              <span class="event-day-tag">నిత్యం</span>
+            </div>
+            <div class="event-details-column">
+              <div class="event-meta-row">
+                <span class="event-time-badge">⏰ 08:00 AM &amp; 07:00 PM</span>
+                <span class="event-venue-badge">📍 Ganesh Mandapam</span>
+              </div>
+              <h3 class="event-title">Daily Ganapathi Puja, Harati &amp; Prasadam</h3>
+              <h4 class="event-telugu-title">నిత్య పూజ, మహా మంగళహారతి &amp; ప్రసాద వితరణ</h4>
+              <p class="event-desc">
+                ప్రతిరోజూ ఉదయం మరియు సాయంత్రం కాలనీ భక్తుల సమక్షంలో విశేష హారతి, భజన సంకీర్తనలు మరియు తీర్థప్రసాద వితరణ.
+              </p>
+            </div>
+          </div>
+
+          <!-- EVENT 3: CULTURAL PROGRAMS & COMPETITIONS -->
+          <div class="event-card" data-category="cultural">
+            <div class="event-date-column">
+              <span class="event-day-number">DAY 3</span>
+              <span class="event-month">సాయంత్రం</span>
+              <span class="event-day-tag">సంబరాలు</span>
+            </div>
+            <div class="event-details-column">
+              <div class="event-meta-row">
+                <span class="event-time-badge">⏰ 06:30 PM to 09:30 PM</span>
+                <span class="event-venue-badge">📍 Mandapam Open Stage</span>
+              </div>
+              <h3 class="event-title">Children's Cultural Programs &amp; Competitions</h3>
+              <h4 class="event-telugu-title">పిల్లల సాంస్కృతిక కార్యక్రమాలు &amp; ప్రతిభా పోటీలు</h4>
+              <p class="event-desc">
+                స్థానిక చిన్నారులకు భక్తి గీతాలాపన, నృత్య ప్రదర్శనలు, క్విజ్ మరియు వేషధారణ పోటీలు. విజేతలకు ప్రత్యేక బహుమతులు.
+              </p>
+            </div>
+          </div>
+
+          <!-- EVENT 4: MAHA ANNADANAM -->
+          <div class="event-card" data-category="annadanam">
+            <div class="event-date-column">
+              <span class="event-day-number">DAY 5</span>
+              <span class="event-month">మధ్యాహ్నం</span>
+              <span class="event-day-tag">మహా ప్రసాదం</span>
+            </div>
+            <div class="event-details-column">
+              <div class="event-meta-row">
+                <span class="event-time-badge">⏰ 12:00 PM to 04:00 PM</span>
+                <span class="event-venue-badge">📍 Annadana Mandapam</span>
+              </div>
+              <h3 class="event-title">Grand Maha Annadanam (Community Feast)</h3>
+              <h4 class="event-telugu-title">శ్రీవారి మహా అన్నదాన సమారాధన</h4>
+              <p class="event-desc">
+                వెస్ట్ స్ట్రీట్ యూత్ మరియు కాలనీ దాతల సౌజన్యంతో భక్తులందరికీ రుచికరమైన మహా అన్నదాన వితరణ.
+              </p>
+            </div>
+          </div>
+
+          <!-- EVENT 5: LADDU AUCTION & BHAJANA -->
+          <div class="event-card" data-category="cultural">
+            <div class="event-date-column">
+              <span class="event-day-number">SPECIAL</span>
+              <span class="event-month">రాత్రి</span>
+              <span class="event-day-tag">శుభకార్యం</span>
+            </div>
+            <div class="event-details-column">
+              <div class="event-meta-row">
+                <span class="event-time-badge">⏰ 08:00 PM onwards</span>
+                <span class="event-venue-badge">📍 Ganesh Mandapam</span>
+              </div>
+              <h3 class="event-title">Bhajana Sandhya &amp; Sacred Laddu Auction</h3>
+              <h4 class="event-telugu-title">భక్తి భజన &amp; స్వామివారి విశేష లడ్డూ వేలంపాట</h4>
+              <p class="event-desc">
+                దివ్య భజన బృందం వారిచే నామసంకీర్తన మరియు గణపతి మహా ప్రసాద లడ్డూ బహిరంగ వేలంపాట కార్యక్రమం.
+              </p>
+            </div>
+          </div>
+
+          <!-- EVENT 6: GANDH NIMAJJANAM & SHOBHA YATRA -->
+          <div class="event-card" data-category="nimajjanam">
+            <div class="event-date-column" style="background: linear-gradient(180deg, #E65100 0%, #4A148C 100%);">
+              <span class="event-day-number">FINAL</span>
+              <span class="event-month">నిమజ్జనం</span>
+              <span class="event-day-tag">శోభాయాత్ర</span>
+            </div>
+            <div class="event-details-column">
+              <div class="event-meta-row">
+                <span class="event-time-badge">⏰ 03:00 PM onwards</span>
+                <span class="event-venue-badge">📍 Procession Route to Water Body</span>
+              </div>
+              <h3 class="event-title">Grand Shobha Yatra &amp; Ganesh Nimajjanam</h3>
+              <h4 class="event-telugu-title">ఘన శోభాయాత్ర &amp; గంగా నిమజ్జన మహోత్సవం</h4>
+              <p class="event-desc">
+                తీన్మార్ డప్పులు, కోలాటం, గులాల్ వర్షం మరియు వేలాది భక్తుల జయజయధ్వానాల మధ్య గణపతి బప్పాకు వీడ్కోలు యాత్ర.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         5. GALLERY SECTION
+         ================================================================= -->
+    <section id="gallery" class="section section-crimson">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tagline">వేడుకల చిత్రమాలిక • Celebration Moments</span>
+          <h2 class="section-title gold-gradient-text">Festival Photo Gallery</h2>
+          <div class="section-divider">
+            <span class="divider-line"></span>
+            <img src="assets/images/diya.svg" alt="" class="divider-diya diya-flame-flicker">
+            <span class="divider-line right"></span>
+          </div>
+          <p class="section-description">
+            గణపతి విగ్రహం, అలంకరణ, సాంస్కృతిక వేడుకలు మరియు మునుపటి ఉత్సవాల మధుర క్షణాలు.
+          </p>
+        </div>
+
+        <!-- Gallery Filter Bar -->
+        <div class="gallery-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Photos (అన్నీ)</button>
+          <button class="filter-btn" data-filter="ganesh">Ganesh Idol (విగ్రహం)</button>
+          <button class="filter-btn" data-filter="decor">Decorations (అలంకరణ)</button>
+          <button class="filter-btn" data-filter="committee">Committee &amp; Youth (యువత)</button>
+          <button class="filter-btn" data-filter="cultural">Cultural (సాంస్కృతిక)</button>
+          <button class="filter-btn" data-filter="previous">Previous Years (మునుపటివి)</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+          <!-- Item 1: Ganesh Idol -->
+          <div class="gallery-item" data-category="ganesh">
+            <img src="assets/images/placeholder-gallery.svg" alt="Lord Ganesha Idol">
+            <div class="gallery-overlay">
+              <span class="gallery-category-pill">Ganesh Idol</span>
+              <h4 class="gallery-item-title">Lord Ganesha Darshanam</h4>
+              <p class="gallery-item-sub">శ్రీ గణపతి దివ్య స్వరూపం</p>
+            </div>
+          </div>
+
+          <!-- Item 2: Mandapam Decoration -->
+          <div class="gallery-item" data-category="decor">
+            <img src="assets/images/placeholder-gallery.svg" alt="Mandapam Decoration">
+            <div class="gallery-overlay">
+              <span class="gallery-category-pill">Decorations</span>
+              <h4 class="gallery-item-title">Lighting &amp; Floral Decor</h4>
+              <p class="gallery-item-sub">మండప విద్యుద్దీప అలంకరణ</p>
+            </div>
+          </div>
+
+          <!-- Item 3: Committee & Youth -->
+          <div class="gallery-item" data-category="committee">
+            <img src="assets/images/placeholder-gallery.svg" alt="West Street Youth Team">
+            <div class="gallery-overlay">
+              <span class="gallery-category-pill">Committee</span>
+              <h4 class="gallery-item-title">West Street Youth Team</h4>
+              <p class="gallery-item-sub">వెస్ట్ స్ట్రీట్ యువత బృందం</p>
+            </div>
+          </div>
+
+          <!-- Item 4: Cultural Program -->
+          <div class="gallery-item" data-category="cultural">
+            <img src="assets/images/placeholder-gallery.svg" alt="Cultural Dance">
+            <div class="gallery-overlay">
+              <span class="gallery-category-pill">Cultural</span>
+              <h4 class="gallery-item-title">Children's Dance Performance</h4>
+              <p class="gallery-item-sub">చిన్నారుల భక్తి నృత్యాలు</p>
+            </div>
+          </div>
+
+          <!-- Item 5: Annadanam Service -->
+          <div class="gallery-item" data-category="cultural">
+            <img src="assets/images/placeholder-gallery.svg" alt="Annadanam Service">
+            <div class="gallery-overlay">
+              <span class="gallery-category-pill">Cultural</span>
+              <h4 class="gallery-item-title">Annadanam Distribution</h4>
+              <p class="gallery-item-sub">మహా అన్నదాన ప్రసాద వితరణ</p>
+            </div>
+          </div>
+
+          <!-- Item 6: Previous Celebrations -->
+          <div class="gallery-item" data-category="previous">
+            <img src="assets/images/placeholder-gallery.svg" alt="Nimajjanam Shobha Yatra">
+            <div class="gallery-overlay">
+              <span class="gallery-category-pill">Previous Years</span>
+              <h4 class="gallery-item-title">Grand Nimajjanam Procession</h4>
+              <p class="gallery-item-sub">గత సంబరాల శోభాయాత్ర</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+          <p style="color: #BCAAA4; font-size: 0.88rem;">
+            📸 <em>ఫోటోలను మార్చడానికి: మీ అసలైన ఫోటోలను 'assets/images/' ఫోల్డర్‌లో ఉంచి, index.html లోని ఇమేజ్ లింక్‌లను అప్‌డేట్ చేయండి.</em>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-hidden="true">
+      <div class="lightbox-content">
+        <button class="lightbox-close-btn" aria-label="Close Lightbox">✕</button>
+        <div class="lightbox-image-container">
+          <img id="lightbox-img" src="" alt="">
+        </div>
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+      </div>
+    </div>
+
+    <!-- =================================================================
+         6 & 7. DONATION / SUPPORT SECTION & PRESET AMOUNTS
+         ================================================================= -->
+    <section id="donate" class="section section-darker">
+      <div class="container donation-container">
+        <div class="section-header">
+          <span class="section-tagline">భక్తితో సమర్పించండి • Community Support</span>
+          <h2 class="section-title gold-gradient-text">Support West Street Youth</h2>
+          <div class="section-divider">
+            <span class="divider-line"></span>
+            <img src="assets/images/diya.svg" alt="" class="divider-diya diya-flame-flicker">
+            <span class="divider-line right"></span>
+          </div>
+        </div>
+
+        <div class="donation-card-wrapper">
+          <!-- Required Telugu Message -->
+          <div class="donation-telugu-appeal">
+            "మీ సహాయం మా వినాయక చవితి వేడుకలను మరింత ఘనంగా నిర్వహించడానికి సహాయపడుతుంది."
+          </div>
+
+          <!-- Preset Amounts Selection -->
+          <div class="amount-selector-title">
+            విరాళం మొత్తం ఎంపిక చేసుకోండి (Select Donation Amount)
+          </div>
+          <div class="amount-chips-grid">
+            <button type="button" class="amount-chip" data-amount="100">₹100</button>
+            <button type="button" class="amount-chip active" data-amount="500">₹500</button>
+            <button type="button" class="amount-chip" data-amount="1000">₹1,000</button>
+            <button type="button" class="amount-chip" data-amount="2000">₹2,000</button>
+            <button type="button" class="amount-chip" data-amount="custom">Custom Amount</button>
+          </div>
+          <div id="selected-amount-display" style="text-align: center; color: #FFD54F; font-size: 0.95rem; font-weight: 600; margin-bottom: 25px;">
+            ఎంపిక చేసిన కానుక: ₹500 (Selected: ₹500)
+          </div>
+
+          <!-- Two Column Payment Details Container -->
+          <div class="payment-grid">
+            <!-- Left: UPI QR Code Container -->
+            <div class="qr-box">
+              <!-- PLACEHOLDER: Replace this SVG placeholder with your real UPI QR code screenshot -->
+              <img src="assets/images/qr-placeholder.svg" alt="[YOUR UPI QR CODE]">
+              <p class="qr-scan-guide">
+                Google Pay • PhonePe • Paytm • BHIM
+              </p>
+            </div>
+
+            <!-- Right: Exact Payment Details with Placeholders -->
+            <div class="payment-details-list">
+              <!-- UPI ID Field -->
+              <div class="payment-field-card">
+                <div>
+                  <div class="field-label">UPI ID</div>
+                  <!-- PLACEHOLDER: Replace with your actual UPI ID -->
+                  <div class="field-value" id="upi-id-value">[YOUR UPI ID]</div>
+                </div>
+                <button type="button" class="copy-btn" id="copy-upi-btn" title="Click to copy UPI ID">
+                  📋 Copy UPI ID
+                </button>
+              </div>
+
+              <!-- Payment Name Field -->
+              <div class="payment-field-card">
+                <div>
+                  <div class="field-label">Payment Name / Payee</div>
+                  <!-- PLACEHOLDER: Replace with your actual receiver name or committee name -->
+                  <div class="field-value">[PAYMENT NAME]</div>
+                </div>
+                <span style="font-size: 0.8rem; color: #FFE082;">Account Verified</span>
+              </div>
+
+              <!-- Contact Number for Confirmation -->
+              <div class="payment-field-card">
+                <div>
+                  <div class="field-label">Contact / Helpline Number</div>
+                  <!-- PLACEHOLDER: Replace with your committee phone number -->
+                  <div class="field-value">[CONTACT NUMBER]</div>
+                </div>
+                <a href="tel:[CONTACT NUMBER]" class="copy-btn" style="text-decoration:none;">
+                  📞 Call
+                </a>
+              </div>
+
+              <!-- Transparency & Manual Payment Verification Note -->
+              <div class="payment-note-box">
+                <strong>గమనిక (Important Notice):</strong> విరాళం సమర్పించిన తర్వాత, మీ పేరు మరియు లావాదేవీ స్క్రీన్‌షాట్‌ను మా కమిటీ వాట్సాప్ నంబర్‌కు పంపించవలసిందిగా కోరుతున్నాము. మీ పేరుని మండపం వద్ద ప్రత్యేక రసీదు బోర్డుపై పొందుపరుస్తాము.
+              </div>
+
+              <!-- Send Screenshot on WhatsApp Button -->
+              <a href="https://wa.me/[WHATSAPP NUMBER]?text=నమస్తే%20West%20Street%20Youth,%20నేను%20వినాయక%20చవితికి%20కానుక%20సమర్పించాను." target="_blank" rel="noopener noreferrer" class="whatsapp-verify-btn">
+                <span>💬 WhatsApp లో స్క్రీన్‌షాట్ పంపండి ([WHATSAPP NUMBER])</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         8. CONTACT & LOCATION SECTION
+         ================================================================= -->
+    <section id="contact" class="section section-crimson">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tagline">మమ్మల్ని సంప్రదించండి • Reach Out</span>
+          <h2 class="section-title gold-gradient-text">Contact &amp; Event Venue</h2>
+          <div class="section-divider">
+            <span class="divider-line"></span>
+            <img src="assets/images/diya.svg" alt="" class="divider-diya diya-flame-flicker">
+            <span class="divider-line right"></span>
+          </div>
+          <p class="section-description">
+            వేడుకల వివరాలు, అన్నదానం స్పాన్సర్‌షిప్ లేదా ఇతర సహాయం కోసం కమిటీ ప్రతినిధులను సంప్రదించండి.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Details Cards -->
+          <div class="contact-info-panel">
+            <!-- Contact Card 1: Phone -->
+            <div class="contact-card">
+              <div class="contact-card-icon">📞</div>
+              <div class="contact-card-text">
+                <h4>Contact Number</h4>
+                <p>[CONTACT NUMBER]</p>
+                <a href="tel:[CONTACT NUMBER]" class="contact-link">Call West Street Youth &rarr;</a>
+              </div>
+            </div>
+
+            <!-- Contact Card 2: WhatsApp -->
+            <div class="contact-card">
+              <div class="contact-card-icon" style="background: rgba(37, 211, 102, 0.2); color: #25D366;">💬</div>
+              <div class="contact-card-text">
+                <h4>WhatsApp Helpline</h4>
+                <p>[WHATSAPP NUMBER]</p>
+                <a href="https://wa.me/[WHATSAPP NUMBER]" target="_blank" rel="noopener noreferrer" class="contact-link">Chat on WhatsApp &rarr;</a>
+              </div>
+            </div>
+
+            <!-- Contact Card 3: Location -->
+            <div class="contact-card">
+              <div class="contact-card-icon">📍</div>
+              <div class="contact-card-text">
+                <h4>Event Venue &amp; Mandapam</h4>
+                <p>[LOCATION]</p>
+                <span style="font-size: 0.85rem; color: var(--text-muted); display: block; margin-bottom: 8px;">
+                  West Street Ganesh Mandapam Ground
+                </span>
+                <!-- Google Maps Button -->
+                <a href="https://maps.google.com/?q=[LOCATION]" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 8px 18px; font-size: 0.88rem; margin-top: 4px;">
+                  🗺️ Open in Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Devotional Inquiry / Wish Form -->
+          <div class="contact-form-panel">
+            <h3 class="gold-gradient-text">స్వామివారికి మీ భక్తి ప్రార్థన</h3>
+            <p>అన్నదాన సేవలో పాల్గొనదలచిన లేదా విశేష పూజలు బుక్ చేయదలచిన భక్తులు ఇక్కడ తెలియజేయవచ్చు.</p>
+
+            <form id="festival-contact-form">
+              <div class="form-group">
+                <label for="contact-name">మీ పూర్తి పేరు (Full Name)</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="ఉదా: రాము" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-phone">ఫోన్ నంబర్ (Phone Number)</label>
+                <input type="tel" id="contact-phone" class="form-control" placeholder="ఉదా: 9876543210" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-msg">సందేశం లేదా పూజా వివరాలు (Message / Request)</label>
+                <textarea id="contact-msg" class="form-control" placeholder="మీ సందేశం ఇక్కడ రాయండి..." rows="3" required></textarea>
+              </div>
+
+              <button type="submit" class="form-submit-btn">
+                <span>🙏 సందేశం పంపండి (Submit Message)</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =================================================================
+       9. FOOTER SECTION
+       ================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand-block">
+        <h2 class="footer-logo-title gold-gradient-text">WEST STREET YOUTH</h2>
+        <p class="footer-telugu-blessing">మన వీధి వినాయక చవితి వేడుకలు</p>
+        <p class="footer-morya-quote">"Ganapathi Bappa Morya 🙏"</p>
+      </div>
+
+      <!-- Quick Nav Links -->
+      <div class="footer-nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#committee">Committee Members</a>
+        <a href="#events">Program Schedule</a>
+        <a href="#gallery">Photo Gallery</a>
+        <a href="#donate">Donate / కానుక</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <!-- Bottom Copyright & Organized by -->
+      <div class="footer-bottom-bar">
+        <p class="footer-crafted-by">
+          Organized with ❤️ by <strong>West Street Youth</strong>
+        </p>
+        <p>
+          సర్వేజనా సుఖినోభవంతు • అందరికీ వినాయక చవితి శుభాకాంక్షలు
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =================================================================
+       FLOATING FESTIVE TOOLBAR (AUDIO CHIME, PETAL SHOWER, TOP JUMP)
+       ================================================================= -->
+  <div class="floating-festive-toolbar" aria-label="Festive Controls">
+    <!-- Temple Bell Audio Chime Toggle -->
+    <button type="button" class="toolbar-btn" id="bell-chime-btn" title="రింగ్ గణపతి ఆలయ గంట (Ring Temple Bell)">
+      🔔
+    </button>
+
+    <!-- Falling Petals Toggle -->
+    <button type="button" class="toolbar-btn active" id="toggle-petals-btn" title="పుష్ప వర్షం ఆన్/ఆఫ్ (Toggle Petals)">
+      🌸
+    </button>
+
+    <!-- Back to Top Button -->
+    <button type="button" class="toolbar-btn" id="back-to-top-btn" title="పైకి వెళ్ళండి (Back to Top)" style="display: none;">
+      ▲
+    </button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/petals.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
