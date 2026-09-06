@@ -92,13 +92,8 @@ function initCountdownTimer() {
 
   if (!daysEl || !hoursEl || !minsEl || !secsEl) return;
 
-  // Set festival date (Vinayaka Chavithi celebrations target)
-  // Default to upcoming celebration date or 7 days from today
-  const now = new Date();
-  const festivalDate = new Date(now.getFullYear(), 8, 15, 8, 30, 0); // Mid-September morning
-  if (festivalDate.getTime() < now.getTime()) {
-    festivalDate.setDate(now.getDate() + 7);
-  }
+  // Set festival date (Vinayaka Chavithi celebrations target: Sep 14, 2026 08:30 AM)
+  const festivalDate = new Date(2026, 8, 14, 8, 30, 0); // September 14, 2026
 
   function update() {
     const currentTime = new Date().getTime();
@@ -144,8 +139,9 @@ function initEventFilters() {
       const category = btn.getAttribute('data-filter');
 
       eventCards.forEach(card => {
-        const cardCategory = card.getAttribute('data-category');
-        if (category === 'all' || cardCategory === category) {
+        const cardCategoryStr = card.getAttribute('data-category') || '';
+        const cardCategories = cardCategoryStr.toLowerCase().split(/\s+/);
+        if (category === 'all' || cardCategories.includes(category)) {
           card.style.display = 'grid';
           card.classList.add('fade-in-up');
         } else {
@@ -172,8 +168,9 @@ function initGalleryFilters() {
       const filter = btn.getAttribute('data-filter');
 
       galleryItems.forEach(item => {
-        const itemCategory = item.getAttribute('data-category');
-        if (filter === 'all' || itemCategory === filter) {
+        const itemCategoryStr = item.getAttribute('data-category') || '';
+        const itemCategories = itemCategoryStr.toLowerCase().split(/\s+/);
+        if (filter === 'all' || itemCategories.includes(filter)) {
           item.style.display = 'block';
           item.classList.add('fade-in-up');
         } else {

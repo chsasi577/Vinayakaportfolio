@@ -1055,6 +1055,47 @@ ul {
   line-height: 1.5;
 }
 
+.event-ubhayam-box {
+  background: rgba(255, 213, 79, 0.08);
+  border-left: 3px solid var(--gold-bright);
+  padding: 8px 14px;
+  border-radius: 0 8px 8px 0;
+  margin-top: 4px;
+  font-size: 0.88rem;
+  color: #FFE082;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nimajjanam-schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.nimajjanam-step-card {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 8px;
+  padding: 9px 12px;
+}
+
+.nimajjanam-step-time {
+  font-weight: 700;
+  color: var(--gold-bright);
+  font-size: 0.8rem;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.nimajjanam-step-text {
+  font-size: 0.82rem;
+  color: #E2D3BE;
+  line-height: 1.35;
+}
+
 /* --- PHOTO GALLERY SECTION --- */
 .gallery-filter-bar {
   display: flex;
